@@ -3,6 +3,10 @@ Algorithm to solve 3x3 cube with Image Processing and OpenCV
 
 # Introduction
 
+| Right Face (U) | Canny Visualization (C) |
+| :---: | :---: |
+| ![Upper Example](assets/Left.jpeg) | ![Front Example](assets/LeftCanny.jpeg) |
+
 The input are 6 photos, so it's pratical for the user, instead of coloring the cube each square. The algorithm processes these images to identify the cube's state and provides a step-by-step solution using the Kociemba algorithm.
 
 # Technical Challenges & Solutions
@@ -30,6 +34,22 @@ Instead of relying on RGB values, that were tested, I converted images to the HS
 ## 3. Spatial Sorting
 
 The algorithm detects the squares in a random order. I developeda a sort_centers function that organizes the 9 detected stickers into a logical sequence (top-left to bottom-right). This ensures the resulting 54-character string matches the physical structure required by the Kociemba library.
+
+## 4.Explainig Solution
+
+Since most of the people don't know the language used by Kociemba library, I created a function explaining each of the moves so the person doesn't understand how to resolve the cube.
+
+The normal output of Kociemba: U F' L2 R'.
+
+With my function:
+
+1. Up: Turn clockwise;
+
+2. Front: Turn counterclockwise;
+
+3. Left: Turn 180 degrees;
+
+4. Right: Turn counterclockwise;
 
 ## User Experience (UX) & Validation
 
