@@ -86,7 +86,7 @@ def find_squares(image_path):
     edges = cv2.dilate(edges, kernel, iterations=1)
 
     # visão dos contornos do quadrado
-    cv2.imshow("Vision of (Canny)", edges)
+    #cv2.imshow("Vision of (Canny)", edges)
     contours, hierarchy = cv2.findContours(edges, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
     squares_detected = []
