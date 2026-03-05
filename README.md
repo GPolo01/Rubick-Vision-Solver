@@ -5,7 +5,7 @@ Algorithm to solve 3x3 cube with Image Processing and OpenCV
 
 | Right Face (U) | Canny Visualization (C) |
 | :---: | :---: |
-| ![Upper Example](assets/Left.jpeg) | ![Front Example](assets/LeftCanny.jpeg) |
+| ![Left Example](assets/Left.jpeg) | ![Canny Vision](assets/LeftCanny.jpeg) |
 
 The input are 6 photos, so it's pratical for the user, instead of coloring the cube each square. The algorithm processes these images to identify the cube's state and provides a step-by-step solution using the Kociemba algorithm.
 
